@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import MyDropzone from './component/Dropzone'
+import Footer from './component/Footer';
+import Header from './component/Header';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+/**
+* @author
+* @function 
+**/
+
+const App  = (props) => {
+  return(
+    <div>
+      <Header />
+      <MyDropzone /> 
+      <Footer />
     </div>
-  );
-}
+   )
+
+ }
 
 export default App;
